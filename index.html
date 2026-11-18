@@ -1,14 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
 </head>
 <body>
-    <h1>Estara en brevas</h1>
+    <form>
+    <table width="100%" cellspacing="2" cellpadding="0">
+        <tr>
+            <td width="60%" valign="top">
+                <fieldset>
+                    <legend>Datos personales:</legend>
+                    <table width="100%">
+                        <tr>
+                            <td width="55">Nombre:</td>
+                            <td><input type="text" name="nombre" size="50"></td>
+                        </tr>
+                        <tr>
+                            <td>Apellidos:</td>
+                            <td><input type="text" name="apellidos" size="50"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Curso:</td>
+                            <td><input type="text" name="curso" size="50"></td>
+                        </tr>
+                        <tr>
+                            <td>hobbies:</td>
+                            <td><textarea name="hobbies" rows="4" cols="38"></textarea></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </td>
 
-    Nombre: <input type="text" id="nombre" name="nombre"><br><br>
-    <input type="button" value="Enviar" onclick="enviar()">
+            <td width="40%" valign="top">
+                <fieldset>
+                    <legend>Idiomas:</legend>
+                    <p>Puntua tu nivel de idiomas de 1 a 5:</p>
+
+                    <table>
+                        <tr>
+                            <td width="60"><b>Ingles:</b></td>
+                            <td>
+                                1 <input type="radio" name="ingles" value="1">
+                                2 <input type="radio" name="ingles" value="2">
+                                3 <input type="radio" name="ingles" value="3">
+                                4 <input type="radio" name="ingles" value="4">
+                                5 <input type="radio" name="ingles" value="5">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Frances:</b></td>
+                            <td>
+                                1 <input type="radio" name="frances" value="1">
+                                2 <input type="radio" name="frances" value="2">
+                                3 <input type="radio" name="frances" value="3">
+                                4 <input type="radio" name="frances" value="4">
+                                5 <input type="radio" name="frances" value="5">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Aleman:</b></td>
+                            <td>
+                                1 <input type="radio" name="aleman" value="1">
+                                2 <input type="radio" name="aleman" value="2">
+                                3 <input type="radio" name="aleman" value="3">
+                                4 <input type="radio" name="aleman" value="4">
+                                5 <input type="radio" name="aleman" value="5">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top">
+
+            <td valign="top">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>
+                            <fieldset>
+                                <legend>Domino los siguientes sistemas:</legend>
+                                <table width="100%">
+                                    <tr>
+                                        Base :<input type="radio" name="base" value="1">
+                                    </tr>
+                                    <p></p>
+                                    <tr>                                       
+                                        Impress: <input type="radio" name="impress" value="1">
+                                    </tr>
+                                    <p></p>
+                                    <tr>
+                                        Calc :<input type="radio" name="calc" value="1">
+                                    </tr>
+                                    <p></p>
+                                    <tr>                                       
+                                        Writer: <input type="radio" name="writer" value="1">
+                                    </tr>
+                                </table>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <fieldset>
+                                <legend>Trabajo con el siguiente Sistema Operativo:</legend>
+                                <select name="sistema">
+                                    <option>Linux</option>
+                                    <option>Windows</option>
+                                    <option>macOS</option>
+                                </select>
+                            </fieldset>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center" height="170" valign="bottom">
+                <input type="reset" value="Reiniciar">
+                <input type="submit" value="Enviar">
+            </td>
+        </tr>
+    </table>
+    </form>
 </body>
 </html>
